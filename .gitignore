@@ -27,5 +27,5 @@ bower_components
 node_modules
 css
 js
-scripts
+scripts/jquery.interactive_bg.js
 fonts

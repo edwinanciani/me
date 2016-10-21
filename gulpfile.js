@@ -22,6 +22,7 @@ gulp.task('styles', ['fonts', 'sass'], function() {
 	return gulp.src([
 		'node_modules/normalize.css/normalize.css',
 		'node_modules/materialize-css/dist/css/materialize.css',
+		'css/ionicons.min.css',
 		'css/main.css'
 	])
 		.pipe(concat('all.css'))

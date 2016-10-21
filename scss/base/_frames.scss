@@ -1,22 +1,57 @@
-@-webkit-keyframes play {
-  from {  background-position: center bottom; }
-  to { background-position: top; }
+@-webkit-keyframes scale {
+    0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: translate(0px, -30px) scale(1.2) ;
+  }
+  100% {
+    transform: translate(0px, 0px)scale(1);
+  }
 }
-@-moz-keyframes play {
-  from {  background-position: center bottom; }
-  to { background-position: top; }
+@-moz-keyframes scale {
+    0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: translate(0px, -30px) scale(1.2) ;
+  }
+  100% {
+    transform: translate(0px, 0px)scale(1);
+  }
 }
-@-ms-keyframes play {
-  from {  background-position: center bottom; }
-  to { background-position: top; }
+@-ms-keyframes scale {
+    0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: translate(0px, -30px) scale(1.2) ;
+  }
+  100% {
+    transform: translate(0px, 0px)scale(1);
+  }
 }
-@-o-keyframes play {
-  from {  background-position: center bottom; }
-  to { background-position: top; }
+@-o-keyframes scale {
+    0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: translate(0px, -30px) scale(1.2) ;
+  }
+  100% {
+    transform: translate(0px, 0px)scale(1);
+  }
 }
-@keyframes play {
-  from {  background-position: center bottom; }
-  to { background-position: top; }
+@keyframes scale {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: translate(0px, -30px) scale(1.2) ;
+  }
+  100% {
+    transform: translate(0px, 0px)scale(1);
+  }
 }
 @-webkit-keyframes pilot {
   from {  background-position:    300px; }

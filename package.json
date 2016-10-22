@@ -4,7 +4,7 @@
   "description": "Tsserapp Css Framework",
   "main": "index.js",
   "scripts": {
-    "test": "gulp"
+    "test": "gulp connect"
   },
   "repository": {
     "type": "git",

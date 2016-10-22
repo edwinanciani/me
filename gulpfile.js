@@ -21,8 +21,8 @@ gulp.task('sass', function() {
 gulp.task('styles', ['fonts', 'sass'], function() {
 	return gulp.src([
 		'node_modules/normalize.css/normalize.css',
-		'node_modules/materialize-css/dist/css/materialize.css',
 		'css/ionicons.min.css',
+		'node_modules/materialize-css/dist/css/materialize.css',
 		'css/main.css'
 	])
 		.pipe(concat('all.css'))
@@ -66,6 +66,18 @@ gulp.task('connect', function() {
 });
 
 gulp.task('deploy', ['scripts', 'styles'], function() {
+	gulp.src([
+		'js/all.min.js',
+		'css/all.min.css',
+		'img/*',
+		'fonts/*',
+		'index.html',
+		'favicon.ico'
+	], { base: './' })
+		.pipe(ghPages());
+});
+
+gulp.task('test', ['scripts', 'styles'], function() {
 	gulp.src([
 		'js/all.min.js',
 		'css/all.min.css',

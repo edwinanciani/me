@@ -77,4 +77,16 @@ gulp.task('deploy', ['scripts', 'styles'], function() {
 		.pipe(ghPages());
 });
 
+gulp.task('test', ['scripts', 'styles'], function() {
+	gulp.src([
+		'js/all.min.js',
+		'css/all.min.css',
+		'img/*',
+		'fonts/*',
+		'index.html',
+		'favicon.ico'
+	], { base: './' })
+		.pipe(ghPages());
+});
+
 gulp.task('default', ['connect', 'watch', 'scripts', 'styles']);

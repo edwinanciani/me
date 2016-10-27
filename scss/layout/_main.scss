@@ -2,4 +2,13 @@
   .hideme {
     opacity: 0;
   }
+  .card {
+    .card-title {
+      font-size: 21px;
+    }
+    .card-action {
+      padding: 10px;
+      padding-left: 20px;
+    }
+  }
 }

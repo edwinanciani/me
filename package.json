@@ -1,22 +1,24 @@
 {
-  "name": "tsserapp-css",
+  "name": "porfolio",
   "version": "1.0.0",
-  "description": "Tsserapp Css Framework",
+  "description": "Portfolio design with @tsserapp theme.",
   "main": "index.js",
   "scripts": {
     "test": "gulp test",
-    "build": "gulp build",
+    "deploy": "gulp deploy",
     "start": "gulp connect"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edwinanciani/tsserappSS.git"
+    "url": "git+https://github.com/edwinanciani/portfolio.git"
   },
   "keywords": [
     "tsserapp",
-    "framework",
+    "porfolio",
     "css",
-    "grid"
+    "js",
+    "javascript",
+    "html"
   ],
   "author": "Edwin Anciani",
   "license": "MIT",

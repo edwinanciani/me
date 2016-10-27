@@ -25,6 +25,47 @@ header {
   a {
     z-index:2;
   }
+  .medals {
+    width: 100%;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .medal {
+      background-image: url("../img/medals.svg");
+      background-repeat: no-repeat;
+      width: 50px;
+      height: 87px;
+      background-size: cover;
+    }
+    .angular {
+      background-position: -645px;
+    }
+    .react {
+      background-position: -330px;
+    }
+    .ionic {
+      background-position: -168px;
+    }
+    .html {
+      background-position: -716px;
+    }
+    .css {
+      background-position: 0px;
+    }
+    .drupal {
+      background-position: -795px;
+    }
+    .docker {
+      background-position: -85px;
+    }
+    .github {
+      background-position: -239px;
+    }
+    .circleci {
+      background-position: -401px;
+    }
+  }
   .card-image {
     z-index:2;
     width:200px;
@@ -36,15 +77,6 @@ header {
     overflow: hidden;
     border: 2px solid $title-color;
     border-radius: 50%;
-  }
-  .medal {
-    background-image: url("../img/medal.svg");
-    background-repeat: no-repeat;
-    margin: 5px auto;
-    width: 300px;
-    height: 65px;
-    background-size: cover;
-    background-position: 8px;
   }
   .bg {
     position: absolute;
@@ -68,6 +100,9 @@ header {
     height: 100px;
     margin: 0 auto;
     animation: scale 14s ease-in-out infinite;
+    @include breakpoint(mobileonly){
+      margin-top: 30%;
+    }
     .pilot {
       z-index:3;
       background-image: url('../img/NAVE-1_SPRITE.png');

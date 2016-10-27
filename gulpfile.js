@@ -61,7 +61,7 @@ gulp.task('watch', function() {
 	gulp.watch('scss/**/*.scss', ['styles']);
 });
 
-gulp.task('connect', function() {
+gulp.task('connect',['watch'], function() {
 	connect.server({ livereload: true });
 });
 
@@ -71,10 +71,13 @@ gulp.task('deploy', ['scripts', 'styles'], function() {
 		'css/all.min.css',
 		'img/*',
 		'fonts/*',
-		'index.html',
-		'favicon.ico'
-	], { base: './' })
-		.pipe(ghPages());
+		'index.html'
+	], { base: './dist/' })
+		.pipe(ghPages({
+			remoteUrl:'git@github.com:edwinanciani/edwinanciani.github.io.git',
+			origin:'origin',
+			branch:'master'
+		}));
 });
 
 gulp.task('test', ['scripts', 'styles'], function() {
@@ -86,7 +89,8 @@ gulp.task('test', ['scripts', 'styles'], function() {
 		'index.html',
 		'favicon.ico'
 	], { base: './' })
-		.pipe(ghPages());
+		.pipe(
+			ghPages());
 });
 
 gulp.task('default', ['connect', 'watch', 'scripts', 'styles']);

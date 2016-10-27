@@ -6,8 +6,6 @@ $(".bg").interactive_bg({
 	wrapContent: false
 });
 
-
-
 $(document).ready(function(){
 	$(".bg").interactive_bg(); // function call
 	/* Every time the window is scrolled ... */
